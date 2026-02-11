@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mechanical Keyboards Hero</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13a4ec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101c22",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px" },
+                    backgroundImage: {
+                        'grid-pattern': "linear-gradient(to right, #13a4ec1a 1px, transparent 1px), linear-gradient(to bottom, #13a4ec1a 1px, transparent 1px)",
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar hiding for cleaner mobile view */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        /* Custom neon glow for the keyboard */
+        .neon-glow {
+            box-shadow: 0 0 40px -10px rgba(19, 164, 236, 0.3);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-800 dark:text-white min-h-screen flex flex-col overflow-x-hidden relative">
+<!-- Navbar -->
+<nav class="fixed top-0 w-full z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10">
+<div class="max-w-md mx-auto px-6 h-16 flex items-center justify-between">
+<button class="p-2 -ml-2 rounded-lg hover:bg-primary/10 transition-colors">
+<span class="material-icons text-2xl text-slate-600 dark:text-slate-300">menu</span>
+</button>
+<div class="flex items-center gap-2">
+<span class="material-icons text-primary">keyboard</span>
+<span class="font-bold text-lg tracking-tight">K-BOARD</span>
+</div>
+<button class="p-2 -mr-2 rounded-lg hover:bg-primary/10 transition-colors relative">
+<span class="material-icons text-2xl text-slate-600 dark:text-slate-300">shopping_bag</span>
+<span class="absolute top-1 right-1 w-2.5 h-2.5 bg-primary rounded-full ring-2 ring-background-dark"></span>
+</button>
+</div>
+</nav>
+<!-- Main Hero Content -->
+<main class="flex-grow flex flex-col justify-center relative pt-20 pb-24 max-w-md mx-auto w-full">
+<!-- Background Decor -->
+<div class="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+<!-- Grid Pattern -->
+<div class="absolute inset-0 bg-grid-pattern bg-[length:40px_40px] opacity-20"></div>
+<!-- Gradient Orbs -->
+<div class="absolute -top-20 -right-20 w-64 h-64 bg-primary/20 rounded-full blur-3xl mix-blend-screen animate-pulse"></div>
+<div class="absolute top-1/2 -left-20 w-48 h-48 bg-purple-500/10 rounded-full blur-3xl mix-blend-screen"></div>
+</div>
+<div class="relative z-10 px-6 flex flex-col items-center text-center space-y-8">
+<!-- Headlines -->
+<div class="space-y-4">
+<span class="inline-block py-1 px-3 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold tracking-wider uppercase mb-2">
+                    Nueva Colección 2024
+                </span>
+<h1 class="text-4xl leading-tight font-bold tracking-tight">
+                    Deja la membrana <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-cyan-200">atrás.</span>
+</h1>
+<p class="text-xl text-slate-400 font-medium">
+                    Siente cada clic.
+                </p>
+</div>
+<!-- Product Visual -->
+<div class="relative w-full group">
+<!-- Glowing effect behind product -->
+<div class="absolute inset-0 bg-gradient-to-t from-primary/20 via-transparent to-transparent rounded-full blur-2xl opacity-60 group-hover:opacity-80 transition-opacity duration-500 transform translate-y-12 scale-90"></div>
+<div class="relative z-10 transform transition-transform duration-500 group-hover:-translate-y-2 hover:scale-[1.02]">
+<img alt="High-end 60% mechanical keyboard with RGB lighting in dark setting" class="w-full h-auto object-contain rounded-xl shadow-2xl shadow-primary/20 neon-glow" data-alt="Sleek 60% mechanical keyboard with soft blue RGB backlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbcHwp1WkqcMFv339xMSj6SFGnyIH2WK1VKRaU_A-kM1idBtltq7eXMhre0e9Vk4OjvIN3mPnJV5oS4fT3Gk_XndfYwFII36_zaZrlOau7iTMm6Zvd2zV6E-k6Mft5gcY0koIFAa690R2vdZ764zqNsDvCbCg93LZChiE-s7yzor-LvhrPOJgS2HAC9Oi21CEkGMA-suFVsYS8z__YlNt6v4vjhWDpADIzk2xQmauC9b7mdSX8obIkC1PBwFiA4lFBTMNxEM_hmMg"/>
+<!-- Floating Specs Tags -->
+<div class="absolute -right-4 top-10 bg-background-dark/80 backdrop-blur border border-primary/20 px-3 py-1.5 rounded-lg shadow-lg flex items-center gap-2 transform rotate-6">
+<span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+<span class="text-xs font-bold text-white">Wireless 2.4G</span>
+</div>
+<div class="absolute -left-2 bottom-8 bg-background-dark/80 backdrop-blur border border-primary/20 px-3 py-1.5 rounded-lg shadow-lg flex items-center gap-2 transform -rotate-3">
+<span class="material-icons text-primary text-sm">bolt</span>
+<span class="text-xs font-bold text-white">Hot-swappable</span>
+</div>
+</div>
+</div>
+<!-- Value Proposition -->
+<div class="grid grid-cols-3 gap-2 w-full pt-4">
+<div class="flex flex-col items-center gap-1 p-2 rounded-lg bg-white/5 border border-white/5 backdrop-blur-sm">
+<span class="material-icons text-primary text-xl">speed</span>
+<span class="text-[10px] text-slate-300 font-medium uppercase tracking-wide">1ms Latency</span>
+</div>
+<div class="flex flex-col items-center gap-1 p-2 rounded-lg bg-white/5 border border-white/5 backdrop-blur-sm">
+<span class="material-icons text-primary text-xl">palette</span>
+<span class="text-[10px] text-slate-300 font-medium uppercase tracking-wide">RGB Sync</span>
+</div>
+<div class="flex flex-col items-center gap-1 p-2 rounded-lg bg-white/5 border border-white/5 backdrop-blur-sm">
+<span class="material-icons text-primary text-xl">build</span>
+<span class="text-[10px] text-slate-300 font-medium uppercase tracking-wide">Mod-Ready</span>
+</div>
+</div>
+<!-- CTA Section -->
+<div class="w-full space-y-4 pt-2">
+<button class="w-full bg-primary hover:bg-primary/90 text-white font-bold text-lg py-4 px-8 rounded-xl shadow-lg shadow-primary/25 transition-all active:scale-[0.98] flex items-center justify-center gap-2 group">
+                    Comprar Ahora
+                    <span class="material-icons group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<p class="text-xs text-slate-500">Envío gratis en órdenes sobre $50 USD</p>
+</div>
+</div>
+</main>
+<!-- Floating WhatsApp Button -->
+<div class="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3 pointer-events-none">
+<!-- Helper Bubble -->
+<div class="bg-white text-slate-900 px-4 py-3 rounded-xl rounded-tr-sm shadow-xl max-w-[200px] transform transition-all duration-300 animate-bounce pointer-events-auto border border-primary/20">
+<p class="text-xs font-medium leading-relaxed">
+                👋 Consulta disponibilidad y envío hoy.
+            </p>
+</div>
+<!-- WhatsApp Icon Button -->
+<a class="bg-[#25D366] hover:bg-[#20bd5a] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg shadow-green-900/20 transition-transform hover:scale-110 active:scale-90 pointer-events-auto relative group" href="#">
+<span class="absolute inset-0 rounded-full border-2 border-white/20 animate-ping opacity-75"></span>
+<!-- Custom SVG for WhatsApp since Material Icons doesn't have the brand logo -->
+<svg class="w-8 h-8 fill-current" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path></svg>
+</a>
+</div>
+</body></html>

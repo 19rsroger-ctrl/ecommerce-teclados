@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEY_GEN_Z | Mechanical Keyboards</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="js/app.js"></script>
+</head>
+
+<body class="bg-background-dark text-slate-100 font-display min-h-screen pb-20">
+
+    <!-- Sticky Header -->
+    <header
+        class="sticky top-0 z-50 bg-background-dark/80 backdrop-blur-md border-b border-white/5 px-6 py-4 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+            <span class="material-icons text-primary text-3xl">keyboard</span>
+            <h1 class="text-xl font-bold tracking-tight text-white hidden sm:block">KEY_GEN_Z</h1>
+        </div>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+            <a href="catalog.html" class="text-slate-400 hover:text-white transition-colors">Tienda</a>
+            <a href="configurator.html" class="text-slate-400 hover:text-white transition-colors">Personalizar</a>
+            <a href="guide.html" class="text-slate-400 hover:text-white transition-colors">Guías</a>
+            <a href="faq.html" class="text-slate-400 hover:text-white transition-colors">Soporte</a>
+        </nav>
+
+        <a href="catalog.html" class="p-2 -mr-2 rounded-full hover:bg-primary/10 transition-colors relative">
+            <span class="material-icons text-xl text-slate-300">shopping_bag</span>
+            <span class="absolute top-1 right-1 w-2 h-2 bg-primary rounded-full"></span>
+        </a>
+    </header>
+
+    <!-- Hero Section (Imported & Adapted) -->
+    <div class="relative h-[85vh] w-full overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-background-dark z-10"></div>
+        <img src="https://lh3.googleusercontent.com/aida/AOfcidU9gjKtzc93UkjUT8v31ArZEoLUWqfzM4_Ol92LzYz47xqJCP7mI7IgYDd0gDb9Tyee0OiYCgQb24qICZ4hDsXyftT1954KLsdbNN3h3RHPuyyJLl8db3O99t22AsQd3vL7PeH6zNPI_sSKGSXF2V-xPyO2FXJrF8_nISzq-cqPFQ96VFyqsK3oDmLCGLlz5SY1pw6xjE-yf4-58pwUK0nGG4SBpUfgs4szk0mZUuqQ3aDYIA4gjiR2BA"
+            alt="Hero Keyboard" class="w-full h-full object-cover">
+
+        <div class="absolute bottom-0 left-0 p-8 z-20 w-full">
+            <h1 class="text-5xl font-bold leading-tight mb-4">
+                Deja la membrana <span class="text-primary glow-primary">atrás.</span>
+            </h1>
+            <p class="text-slate-300 mb-8 max-w-xs">
+                Siente cada clic. Envío gratis en órdenes sobre $50 USD.
+            </p>
+            <div class="flex gap-4">
+                <a href="product.html"
+                    class="bg-primary text-black font-bold py-4 px-8 rounded-xl w-full text-center hover:bg-white transition-colors">
+                    COMPRAR PHANTOM
+                </a>
+                <a href="configurator.html"
+                    class="bg-white/10 backdrop-blur-md border border-white/20 text-white font-bold py-4 px-4 rounded-xl flex items-center justify-center">
+                    <span class="material-icons">tune</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Categories / Navigation -->
+    <section class="px-6 py-10">
+        <h2 class="text-2xl font-bold mb-6">Explora</h2>
+        <div class="grid grid-cols-2 gap-4">
+            <a href="guide.html"
+                class="bg-white/5 p-6 rounded-2xl border border-white/10 hover:border-primary/50 transition-colors">
+                <span class="material-icons text-primary text-3xl mb-2">school</span>
+                <h3 class="font-bold">Switch Guide</h3>
+                <p class="text-xs text-slate-400">Aprende sobre switches</p>
+            </a>
+            <a href="configurator.html"
+                class="bg-white/5 p-6 rounded-2xl border border-white/10 hover:border-primary/50 transition-colors">
+                <span class="material-icons text-primary text-3xl mb-2">build</span>
+                <h3 class="font-bold">Configurador</h3>
+                <p class="text-xs text-slate-400">Crea tu propio setup</p>
+            </a>
+            <a href="catalog.html"
+                class="col-span-2 bg-gradient-to-r from-primary/20 to-primary/5 p-6 rounded-2xl border border-primary/20 flex items-center justify-between">
+                <div>
+                    <h3 class="font-bold text-lg text-primary">Ver Catálogo Completo</h3>
+                    <p class="text-xs text-slate-300">3 Modelos Disponibles</p>
+                </div>
+                <span class="material-icons text-primary">arrow_forward</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Bottom Nav -->
+    <nav
+        class="fixed bottom-0 left-0 right-0 h-16 bg-background-light dark:bg-background-dark/90 backdrop-blur-xl border-t border-primary/10 flex items-center justify-around px-4 z-50">
+        <a href="index.html" class="nav-item active flex flex-col items-center group">
+            <span class="material-icons text-slate-500 group-hover:text-primary transition-colors">home</span>
+            <span class="text-[10px] font-bold text-slate-500 group-hover:text-primary transition-colors">INICIO</span>
+        </a>
+        <a href="catalog.html" class="nav-item flex flex-col items-center group">
+            <span class="material-icons text-slate-500 group-hover:text-primary transition-colors">shopping_bag</span>
+            <span class="text-[10px] font-bold text-slate-500 group-hover:text-primary transition-colors">TIENDA</span>
+        </a>
+        <a href="guide.html" class="nav-item flex flex-col items-center group">
+            <span class="material-icons text-slate-500 group-hover:text-primary transition-colors">school</span>
+            <span class="text-[10px] font-bold text-slate-500 group-hover:text-primary transition-colors">GUÍA</span>
+        </a>
+        <a href="faq.html" class="nav-item flex flex-col items-center group">
+            <span class="material-icons text-slate-500 group-hover:text-primary transition-colors">support_agent</span>
+            <span class="text-[10px] font-bold text-slate-500 group-hover:text-primary transition-colors">AYUDA</span>
+        </a>
+    </nav>
+
+</body>
+
+</html>

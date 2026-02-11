@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mechanical Switch Guide</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0df233",
+                        "background-light": "#f5f8f6",
+                        "background-dark": "#102213",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .force-graph-line {
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 0;
+        }
+        .custom-blur {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen">
+<!-- Sticky Header -->
+<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 custom-blur border-b border-primary/10">
+<div class="px-6 py-4 flex justify-between items-center">
+<span class="text-xl font-bold tracking-tight uppercase">Switch Guide</span>
+<button class="p-2 rounded-full bg-primary/10 text-primary">
+<span class="material-icons-round">tune</span>
+</button>
+</div>
+</header>
+<main class="max-w-md mx-auto px-6 py-8 pb-32">
+<!-- Hero Section -->
+<section class="mb-10">
+<h1 class="text-4xl font-bold mb-3 leading-tight">Find Your <span class="text-primary">Perfect Click.</span></h1>
+<p class="text-slate-500 dark:text-slate-400 leading-relaxed">
+                The right mechanical switch defines your entire typing experience. Discover the physics behind every press.
+            </p>
+</section>
+<!-- Red Linear Card -->
+<div class="mb-8 p-6 rounded-xl bg-white dark:bg-black/40 border border-red-500/20 shadow-2xl shadow-red-500/5">
+<div class="flex items-center gap-4 mb-6">
+<div class="w-16 h-16 rounded-lg bg-red-500/20 flex items-center justify-center relative overflow-hidden">
+<img alt="Red Switch" class="w-10 h-10 object-contain z-10" data-alt="Red mechanical keyboard switch 3D close-up" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXyG0wGJrmoxzVysbzwsy3gKH35hpz_Iwi6RZ1waL7jcLTpjBp2LRZf7AA3mO2e0SdSmN2UYy0_urVBfCs_oCjaPdbj9tXJzOQDpJOskLbWnBnHZUlaBiomgXEGYDW623B-BZQmZwAhEL_zfYxEFjrYf6jyJCrIaRjh2Acnp_vPEMgy08ZBqVnxQJM9FKSki5pSM-tMB9vza5p7gE15POymz33HAWigSE3z1TNMKJwz7EgJTQhWYVLstdgIVyMeKzs9Q4o4u_jVc8"/>
+<div class="absolute inset-0 bg-red-500/10 animate-pulse"></div>
+</div>
+<div>
+<h3 class="text-xl font-bold text-red-500">Red Linear</h3>
+<p class="text-sm text-slate-400">Fast, Smooth, Silent</p>
+</div>
+</div>
+<p class="text-slate-300 mb-6 text-sm leading-relaxed">
+                Preferred by professional gamers for its lack of resistance and rapid-fire response. No tactile bump, just pure speed.
+            </p>
+<div class="space-y-4 mb-8">
+<div class="flex justify-between items-end mb-1">
+<span class="text-xs uppercase tracking-widest text-slate-500">Actuation Force</span>
+<span class="text-lg font-bold text-red-400">45g</span>
+</div>
+<div class="h-2 w-full bg-slate-800 rounded-full overflow-hidden">
+<div class="h-full bg-red-500 w-[45%] rounded-full shadow-[0_0_10px_rgba(239,68,68,0.5)]"></div>
+</div>
+<div class="flex justify-between text-[10px] uppercase text-slate-600">
+<span>0g</span>
+<span>50g</span>
+<span>100g</span>
+</div>
+</div>
+<button class="w-full py-3 rounded-lg border border-red-500/30 bg-red-500/10 text-red-500 font-bold flex items-center justify-center gap-2 hover:bg-red-500/20 transition-all">
+<span class="material-icons-round text-lg">volume_up</span>
+                PLAY SOUND
+            </button>
+</div>
+<!-- Blue Clicky Card -->
+<div class="mb-8 p-6 rounded-xl bg-white dark:bg-black/40 border border-blue-500/20 shadow-2xl shadow-blue-500/5">
+<div class="flex items-center gap-4 mb-6">
+<div class="w-16 h-16 rounded-lg bg-blue-500/20 flex items-center justify-center relative overflow-hidden">
+<img alt="Blue Switch" class="w-10 h-10 object-contain z-10" data-alt="Blue mechanical keyboard switch 3D close-up" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDn6qS34yS8xjYDCv8kRClkgtllgof8Cg4zmbEyoWTqzPxUmLSncccvijgBiKYsQS6FJRZZu3q82GGozrahnwmT0ewn_oiXVjCOVS_qB3tSgaPHPEgRjcZVVeAKLJ4zdDyo_mVlseeEKWzRoOgpUd6BggZBOQRuXTrQ44LQ_P76eTq4XkmZsqtGFfw0vrbHuhvIK_47Jy5pTrlgbQ8pVrb9iJ7dlXT8d0fpW-i9sxhcq4R4tPXGjvs2fz--FkkF0cMElKsYD-44p64"/>
+<div class="absolute inset-0 bg-blue-500/10"></div>
+</div>
+<div>
+<h3 class="text-xl font-bold text-blue-500">Blue Clicky</h3>
+<p class="text-sm text-slate-400">Audible Click, Tactile Bump</p>
+</div>
+</div>
+<p class="text-slate-300 mb-6 text-sm leading-relaxed">
+                The ultimate choice for typists. Features a distinct "click" sound and physical feedback at the exact moment of activation.
+            </p>
+<div class="mb-8">
+<div class="flex justify-between items-end mb-2">
+<span class="text-xs uppercase tracking-widest text-slate-500">Tactile Peak</span>
+<span class="text-lg font-bold text-blue-400">60g</span>
+</div>
+<div class="relative h-20 w-full">
+<svg class="w-full h-full" preserveaspectratio="none" viewbox="0 0 100 40">
+<path class="force-graph-line" d="M0 35 L30 35 L45 10 L60 25 L100 25" fill="none" stroke="#3b82f6" stroke-width="2"></path>
+<circle class="animate-pulse" cx="45" cy="10" fill="#3b82f6" r="3"></circle>
+</svg>
+<div class="absolute top-0 left-[45%] -translate-x-1/2 text-[9px] text-blue-400 font-bold uppercase">Click Point</div>
+</div>
+</div>
+<button class="w-full py-3 rounded-lg border border-blue-500/30 bg-blue-500/10 text-blue-500 font-bold flex items-center justify-center gap-2 hover:bg-blue-500/20 transition-all">
+<span class="material-icons-round text-lg">volume_up</span>
+                PLAY SOUND
+            </button>
+</div>
+<!-- Brown Tactile Card -->
+<div class="mb-8 p-6 rounded-xl bg-white dark:bg-black/40 border border-amber-700/20 shadow-2xl shadow-amber-700/5">
+<div class="flex items-center gap-4 mb-6">
+<div class="w-16 h-16 rounded-lg bg-amber-700/20 flex items-center justify-center relative overflow-hidden">
+<img alt="Brown Switch" class="w-10 h-10 object-contain z-10" data-alt="Brown mechanical keyboard switch 3D close-up" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlun1T8TeUSAU0ZVFMH1DLs6LJZZ2tatRDnhqHZOOgFOetlGL-P_IaAX3tllaEaHT1HwjOh_je1XzMRNB3nrwRTKzjoJe6126r7IrSIIsRgVdDOYdxMDjDCfkzm-a-MimsLi8ROUI8aa33g5Niu2beH2NCQ8G3eDM4NPsqvgztPheMvDp0oVww7tzDwOwyGodZUfbJXhKypLobCG4ywjEOr4f0Ux5buCTm4RUTV-WNYiMat-ksfEvmz8AfTWQ15NKokzK7NKyYxmM"/>
+<div class="absolute inset-0 bg-amber-700/10"></div>
+</div>
+<div>
+<h3 class="text-xl font-bold text-amber-600">Brown Tactile</h3>
+<p class="text-sm text-slate-400">Balanced Bump, Subtle Sound</p>
+</div>
+</div>
+<p class="text-slate-300 mb-6 text-sm leading-relaxed">
+                The "Jack of all trades." Provides a subtle tactile feel without the loud noise. Perfect for shared office spaces and hybrid use.
+            </p>
+<div class="mb-8">
+<div class="flex justify-between items-end mb-2">
+<span class="text-xs uppercase tracking-widest text-slate-500">Operating Force</span>
+<span class="text-lg font-bold text-amber-500">55g</span>
+</div>
+<div class="relative h-20 w-full">
+<svg class="w-full h-full" preserveaspectratio="none" viewbox="0 0 100 40">
+<path d="M0 35 L35 35 Q45 15 55 30 L100 30" fill="none" stroke="#b45309" stroke-width="2"></path>
+<circle cx="45" cy="22" fill="#b45309" r="3"></circle>
+</svg>
+<div class="absolute top-2 left-[45%] -translate-x-1/2 text-[9px] text-amber-500 font-bold uppercase">Soft Bump</div>
+</div>
+</div>
+<button class="w-full py-3 rounded-lg border border-amber-700/30 bg-amber-700/10 text-amber-600 font-bold flex items-center justify-center gap-2 hover:bg-amber-700/20 transition-all">
+<span class="material-icons-round text-lg">volume_up</span>
+                PLAY SOUND
+            </button>
+</div>
+<!-- Call to Action -->
+<section class="mt-12 text-center p-8 rounded-2xl bg-primary/10 border border-primary/20">
+<h2 class="text-2xl font-bold mb-4">Still Not Sure?</h2>
+<p class="text-slate-400 mb-6">Take our 30-second switch quiz to find your soulmate keyboard.</p>
+<button class="w-full py-4 bg-primary text-background-dark font-black rounded-lg uppercase tracking-widest shadow-lg shadow-primary/20">
+                START SWITCH QUIZ
+            </button>
+</section>
+<!-- Footer Footer -->
+<footer class="mt-12 pb-12 border-t border-slate-800 pt-8 text-center">
+<p class="text-slate-500 text-xs uppercase tracking-widest">© 2024 Mechanical Masters Inc.</p>
+</footer>
+</main>
+<!-- Floating WhatsApp Button -->
+<a class="fixed bottom-6 right-6 w-14 h-14 bg-primary rounded-full flex items-center justify-center shadow-xl shadow-primary/40 z-50 transform hover:scale-110 transition-transform" href="#">
+<svg class="lucide lucide-message-circle" fill="none" height="28" stroke="#102213" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg>
+<div class="absolute -top-1 -right-1 w-4 h-4 bg-red-500 rounded-full border-2 border-background-dark"></div>
+</a>
+<!-- Navigation Bar (iOS Style) -->
+<nav class="fixed bottom-0 left-0 right-0 bg-background-light/95 dark:bg-background-dark/95 custom-blur border-t border-primary/10 px-6 py-4 flex justify-around items-center z-40">
+<div class="flex flex-col items-center gap-1 text-primary">
+<span class="material-icons-round">keyboard</span>
+<span class="text-[10px] font-bold uppercase">Guide</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-slate-500">
+<span class="material-icons-round">shopping_bag</span>
+<span class="text-[10px] font-bold uppercase">Shop</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-slate-500">
+<span class="material-icons-round">person</span>
+<span class="text-[10px] font-bold uppercase">Account</span>
+</div>
+</nav>
+</body></html>

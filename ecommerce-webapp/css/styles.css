@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Round');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
+
+/* Base Styles */
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Custom Utilities that might not be in Tailwind default or need specific overrides */
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.glow-primary {
+    box-shadow: 0 0 15px rgba(13, 242, 51, 0.4);
+}
+
+.custom-blur {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+/* Animations */
+@keyframes pulse-glow {
+
+    0%,
+    100% {
+        box-shadow: 0 0 5px rgba(13, 242, 51, 0.2);
+    }
+
+    50% {
+        box-shadow: 0 0 20px rgba(13, 242, 51, 0.6);
+    }
+}
+
+.animate-pulse-glow {
+    animation: pulse-glow 2s infinite;
+}
+
+/* Navigation Active State Helper */
+.nav-item.active span {
+    color: #13a4ec !important;
+    /* Force primary color */
+}

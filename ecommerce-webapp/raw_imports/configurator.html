@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Custom Keyboard Configurator</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0df233",
+                        "background-light": "#f5f8f6",
+                        "background-dark": "#102213",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .glow-primary {
+            box-shadow: 0 0 15px rgba(13, 242, 51, 0.4);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
+<!-- Header / Progress Bar -->
+<header class="px-6 pt-8 pb-4">
+<div class="flex justify-between items-center mb-6">
+<span class="text-xs font-bold uppercase tracking-widest text-primary">Configurator</span>
+<span class="text-xs font-medium opacity-50">v2.4.0</span>
+</div>
+<div class="relative">
+<div class="flex justify-between text-[10px] font-bold uppercase tracking-tighter mb-2">
+<span class="text-primary">Size</span>
+<span class="opacity-40">Switches</span>
+<span class="opacity-40">Keycaps</span>
+<span class="opacity-40">Review</span>
+</div>
+<div class="h-1 w-full bg-white/10 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-1/4 rounded-full glow-primary"></div>
+</div>
+</div>
+</header>
+<!-- Main Preview Area -->
+<main class="flex-grow flex flex-col items-center justify-center px-4 relative">
+<div class="w-full max-w-sm aspect-square relative flex items-center justify-center">
+<!-- Ambient Glow Background -->
+<div class="absolute inset-0 bg-primary/5 rounded-full blur-3xl"></div>
+<!-- 3D Style Keyboard Preview -->
+<div class="relative z-10 w-full transform -rotate-12">
+<img alt="Mechanical Keyboard Skeleton" class="w-full h-auto drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)] dark:drop-shadow-[0_20px_50px_rgba(13,242,51,0.15)] filter grayscale brightness-110" data-alt="Modern 60 percent mechanical keyboard aluminum frame" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClhq1InhPBp-HTWUnPIkdTBATmaUpBNN0qzuNOavq3TOCE4tYeoN6iw9vKSyxph7LZzDtQt-xMHfQDZG8OpTgherT58UMkZGQc_h_cPg-ydTxE5iiB_zmuFEnCrJbspXDMUmR23my95RNgiHW2jm0y-MCKfj0YHTQEQaOzucIS2p7GLAkmZBnOLnn9eW4WC1ZlYpKnQxeP_BoTxxj54unbFUAaAATDg-2PRA207V23sy8h4xI3qSpZPMcJFi2aktWJMUdpnncGkng"/>
+<!-- Detail Callouts -->
+<div class="absolute -top-4 -right-4 bg-background-dark/80 backdrop-blur-md border border-white/10 px-3 py-1 rounded-full flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="text-[10px] font-bold">ALUMINUM CASE</span>
+</div>
+</div>
+</div>
+<div class="w-full text-center mt-4 mb-8">
+<h1 class="text-2xl font-bold tracking-tight">Step 1: Choose Layout</h1>
+<p class="text-sm opacity-60 font-light">The physical footprint and key count</p>
+</div>
+</main>
+<!-- Selection Carousel -->
+<div class="w-full pb-32">
+<div class="flex overflow-x-auto hide-scrollbar snap-x snap-mandatory px-6 gap-4">
+<!-- Card 1: 60% -->
+<div class="min-w-[160px] snap-center bg-white/5 border-2 border-primary rounded-xl p-4 flex flex-col items-start gap-3 relative overflow-hidden group">
+<div class="absolute top-2 right-2">
+<span class="material-icons text-primary text-lg">check_circle</span>
+</div>
+<div class="w-10 h-10 flex items-center justify-center bg-primary/20 rounded-lg">
+<span class="material-icons text-primary">keyboard_hide</span>
+</div>
+<div>
+<h3 class="font-bold text-sm">60% Compact</h3>
+<p class="text-[10px] opacity-60">Portable &amp; Minimalist</p>
+</div>
+<span class="text-xs font-bold text-primary">+$0</span>
+</div>
+<!-- Card 2: TKL -->
+<div class="min-w-[160px] snap-center bg-white/5 border border-white/10 rounded-xl p-4 flex flex-col items-start gap-3 relative overflow-hidden group">
+<div class="w-10 h-10 flex items-center justify-center bg-white/10 rounded-lg">
+<span class="material-icons opacity-60">keyboard</span>
+</div>
+<div>
+<h3 class="font-bold text-sm">TKL (80%)</h3>
+<p class="text-[10px] opacity-60">Balanced Perf.</p>
+</div>
+<span class="text-xs font-bold opacity-40">+$15</span>
+</div>
+<!-- Card 3: 100% -->
+<div class="min-w-[160px] snap-center bg-white/5 border border-white/10 rounded-xl p-4 flex flex-col items-start gap-3 relative overflow-hidden group">
+<div class="w-10 h-10 flex items-center justify-center bg-white/10 rounded-lg">
+<span class="material-icons opacity-60">apps</span>
+</div>
+<div>
+<h3 class="font-bold text-sm">100% Full</h3>
+<p class="text-[10px] opacity-60">The Complete Setup</p>
+</div>
+<span class="text-xs font-bold opacity-40">+$25</span>
+</div>
+</div>
+</div>
+<!-- Navigation Footer -->
+<footer class="fixed bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-background-dark via-background-dark to-transparent pt-12">
+<div class="max-w-md mx-auto flex items-center justify-between gap-4">
+<!-- Floating WhatsApp Style Icon -->
+<button class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/60 active:scale-95 transition-transform">
+<svg class="w-6 h-6 fill-current" viewbox="0 0 24 24">
+<path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217s.231.006.332.013c.101.007.243-.038.384.3s.477 1.154.518 1.241.069.187.012.303c-.058.116-.087.187-.173.289s-.181.217-.26.3c-.087.094-.173.194-.075.362.097.168.43.708.921 1.144.63.561 1.161.736 1.334.823.173.087.274.072.376-.043s.433-.505.548-.678c.115-.173.231-.144.39-.087s1.011.477 1.184.563c.173.087.289.13.332.202.045.072.045.419-.099.824z"></path>
+</svg>
+</button>
+<div class="flex gap-3 flex-grow justify-end">
+<button class="px-6 py-3 font-bold text-xs uppercase tracking-widest opacity-40 active:opacity-100">
+                    Back
+                </button>
+<button class="px-10 py-3 bg-primary text-black font-black text-xs uppercase tracking-widest rounded-xl glow-primary active:scale-95 transition-transform flex items-center gap-2">
+                    Next
+                    <span class="material-icons text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Bottom Home Indicator Area (iOS Spacing) -->
+<div class="h-4"></div>
+</footer>
+</body></html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html class="dark" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>FAQ - Envíos y Garantía</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script src="js/app.js"></script>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-100 font-display min-h-screen flex flex-col antialiased">
+
+    <!-- Standardized Header -->
+    <header
+        class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10 px-4 h-16 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+            <a href="index.html" class="p-2 -ml-2 rounded-full hover:bg-primary/10 transition-colors lg:hidden">
+                <span class="material-icons text-xl text-slate-600 dark:text-slate-300">arrow_back_ios_new</span>
+            </a>
+            <h1 class="text-lg font-bold tracking-tight uppercase hidden sm:block">Ayuda</h1>
+        </div>
+
+        <!-- Desktop Nav (Hidden on Mobile) -->
+        <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+            <a href="catalog.html" class="text-slate-400 hover:text-white transition-colors">Tienda</a>
+            <a href="configurator.html" class="text-slate-400 hover:text-white transition-colors">Personalizar</a>
+            <a href="guide.html" class="text-slate-400 hover:text-white transition-colors">Guías</a>
+            <a href="faq.html" class="text-primary border-b-2 border-primary pb-0.5">Soporte</a>
+        </nav>
+
+        <button class="p-2 -mr-2 rounded-full hover:bg-primary/10 transition-colors">
+            <span class="material-icons text-xl text-primary">search</span>
+        </button>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow flex flex-col max-w-md mx-auto w-full px-4 pb-24 pt-6">
+        <!-- Hero Section -->
+        <div
+            class="mb-8 relative overflow-hidden rounded-2xl bg-gradient-to-br from-primary/20 to-background-dark border border-primary/20 p-6">
+            <div class="absolute -top-10 -right-10 w-32 h-32 bg-primary/20 rounded-full blur-3xl"></div>
+            <h2 class="text-3xl font-bold mb-2 text-white">¿Dudas?</h2>
+            <p class="text-slate-400 text-sm leading-relaxed max-w-[80%]">
+                Tranqui, acá te sacamos todas las dudas para que compres con confianza.
+            </p>
+        </div>
+
+        <!-- FAQ List -->
+        <div class="space-y-4">
+            <!-- Question 1 -->
+            <div
+                class="group rounded-xl bg-white dark:bg-[#16222a] border border-primary/30 overflow-hidden shadow-md shadow-primary/5">
+                <details class="group p-4" open="">
+                    <summary class="flex items-center justify-between cursor-pointer list-none">
+                        <span class="font-semibold text-base pr-4">¿Hacen envíos a todo el país?</span>
+                        <span
+                            class="material-icons text-primary transition-transform group-open:rotate-180">expand_more</span>
+                    </summary>
+                    <div
+                        class="text-slate-500 dark:text-slate-400 mt-4 text-sm leading-relaxed pl-1 border-l-2 border-primary/30">
+                        <p>Sí, enviamos a todo el territorio vía <strong class="text-primary">Correo Argentino</strong>
+                            o <strong class="text-primary">Andreani</strong>. Tu pedido suele llegar en 3-5 días
+                            hábiles.</p>
+                    </div>
+                </details>
+            </div>
+
+            <!-- Question 2 -->
+            <div
+                class="group rounded-xl bg-white dark:bg-[#16222a] border border-white/5 hover:border-primary/20 overflow-hidden transition-all">
+                <details class="group p-4">
+                    <summary class="flex items-center justify-between cursor-pointer list-none">
+                        <span class="font-medium text-base pr-4">¿Tienen garantía?</span>
+                        <span
+                            class="material-icons text-slate-500 transition-transform group-open:rotate-180">expand_more</span>
+                    </summary>
+                    <div
+                        class="text-slate-500 dark:text-slate-400 mt-4 text-sm leading-relaxed pl-1 border-l-2 border-primary/30">
+                        <p>Obvio. Tenés <strong class="text-white">6 meses de garantía oficial</strong> por cualquier
+                            falla de fábrica.</p>
+                    </div>
+                </details>
+            </div>
+
+            <!-- Question 3 -->
+            <div
+                class="group rounded-xl bg-white dark:bg-[#16222a] border border-white/5 hover:border-primary/20 overflow-hidden transition-all">
+                <details class="group p-4">
+                    <summary class="flex items-center justify-between cursor-pointer list-none">
+                        <span class="font-medium text-base pr-4">¿Cómo elijo mi switch?</span>
+                        <span
+                            class="material-icons text-slate-500 transition-transform group-open:rotate-180">expand_more</span>
+                    </summary>
+                    <div
+                        class="text-slate-500 dark:text-slate-400 mt-4 text-sm leading-relaxed pl-1 border-l-2 border-primary/30 space-y-2">
+                        <ul class="list-disc list-inside space-y-1 ml-1">
+                            <li><span class="text-blue-400">Blue:</span> Clicky y ruidoso.</li>
+                            <li><span class="text-red-400">Red:</span> Lineal y silencioso.</li>
+                            <li><span class="text-amber-600">Brown:</span> Táctil equilibrado.</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+        <div class="mt-8 text-center px-4">
+            <p class="text-sm text-slate-500 dark:text-slate-400 mb-2">¿Seguís con dudas?</p>
+            <button class="text-xs text-primary font-bold uppercase tracking-widest border-b border-primary">Contáctanos
+                en WhatsApp</button>
+        </div>
+    </main>
+
+    <!-- Unified Footer -->
+    <footer class="py-6 pb-24 text-center border-t border-primary/10 mt-auto">
+        <p class="text-xs text-slate-500">© 2024 KEY_GEN_Z. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Bottom Nav -->
+    <nav
+        class="fixed bottom-0 left-0 right-0 h-16 bg-background-light dark:bg-background-dark/90 backdrop-blur-xl border-t border-primary/10 flex items-center justify-around px-4 z-50">
+        <a href="index.html" class="nav-item flex flex-col items-center group">
+            <span class="material-icons text-slate-500 group-hover:text-primary transition-colors">home</span>
+            <span class="text-[10px] font-bold text-slate-500 group-hover:text-primary transition-colors">INICIO</span>
+        </a>
+        <a href="catalog.html" class="nav-item flex flex-col items-center group">
+            <span class="material-icons text-slate-500 group-hover:text-primary transition-colors">shopping_bag</span>
+            <span class="text-[10px] font-bold text-slate-500 group-hover:text-primary transition-colors">TIENDA</span>
+        </a>
+        <a href="guide.html" class="nav-item flex flex-col items-center group">
+            <span class="material-icons text-slate-500 group-hover:text-primary transition-colors">school</span>
+            <span class="text-[10px] font-bold text-slate-500 group-hover:text-primary transition-colors">GUÍA</span>
+        </a>
+        <a href="faq.html" class="nav-item active flex flex-col items-center group">
+            <span class="material-icons text-slate-500 group-hover:text-primary transition-colors">support_agent</span>
+            <span class="text-[10px] font-bold text-slate-500 group-hover:text-primary transition-colors">AYUDA</span>
+        </a>
+    </nav>
+</body>
+
+</html>

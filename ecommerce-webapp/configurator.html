@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Custom Keyboard Configurator</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script src="js/app.js"></script>
+    <script src="js/configurator.js" defer></script>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-slate-100 min-h-screen flex flex-col font-display">
+
+    <!-- Sticky Header -->
+    <header
+        class="sticky top-0 z-50 bg-background-dark/80 backdrop-blur-md border-b border-primary/10 px-6 py-4 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+            <a href="index.html" class="p-2 -ml-2 rounded-full hover:bg-white/10 transition-colors lg:hidden">
+                <span class="material-icons text-slate-300">arrow_back</span>
+            </a>
+            <span class="text-lg font-bold tracking-tight uppercase text-white">Configurator</span>
+        </div>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+            <a href="catalog.html" class="text-slate-400 hover:text-white transition-colors">Tienda</a>
+            <a href="configurator.html" class="text-primary border-b-2 border-primary pb-0.5">Personalizar</a>
+            <a href="guide.html" class="text-slate-400 hover:text-white transition-colors">Guías</a>
+            <a href="faq.html" class="text-slate-400 hover:text-white transition-colors">Soporte</a>
+        </nav>
+
+        <div class="w-8"></div> <!-- Spacer -->
+    </header>
+
+    <!-- Progress Bar -->
+    <div class="px-6 pt-6 pb-2">
+        <div class="relative">
+            <div class="flex justify-between text-[10px] font-bold uppercase tracking-tighter mb-2">
+                <span class="text-primary">Size</span>
+                <span class="opacity-40">Switches</span>
+                <span class="opacity-40">Keycaps</span>
+                <span class="opacity-40">Review</span>
+            </div>
+            <div class="h-1 w-full bg-white/10 rounded-full overflow-hidden">
+                <div class="h-full bg-primary w-1/4 rounded-full glow-primary"></div>
+            </div>
+        </div>
+        </header>
+
+        <!-- Main Preview Area -->
+        <main class="flex-grow flex flex-col items-center justify-center px-4 relative">
+            <div class="w-full max-w-sm aspect-square relative flex items-center justify-center">
+                <div class="absolute inset-0 bg-primary/5 rounded-full blur-3xl"></div>
+                <div class="relative z-10 w-full transform -rotate-12 transition-all duration-500"
+                    id="preview-image-container">
+                    <img alt="Mechanical Keyboard Skeleton"
+                        class="w-full h-auto drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)] dark:drop-shadow-[0_20px_50px_rgba(13,242,51,0.15)] filter grayscale brightness-110"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuClhq1InhPBp-HTWUnPIkdTBATmaUpBNN0qzuNOavq3TOCE4tYeoN6iw9vKSyxph7LZzDtQt-xMHfQDZG8OpTgherT58UMkZGQc_h_cPg-ydTxE5iiB_zmuFEnCrJbspXDMUmR23my95RNgiHW2jm0y-MCKfj0YHTQEQaOzucIS2p7GLAkmZBnOLnn9eW4WC1ZlYpKnQxeP_BoTxxj54unbFUAaAATDg-2PRA207V23sy8h4xI3qSpZPMcJFi2aktWJMUdpnncGkng" />
+                </div>
+            </div>
+            <div class="w-full text-center mt-4 mb-8">
+                <h1 class="text-2xl font-bold tracking-tight">Step 1: Choose Layout</h1>
+                <p class="text-sm opacity-60 font-light">The physical footprint and key count</p>
+            </div>
+        </main>
+
+        <!-- Selection Carousel -->
+        <div class="w-full pb-32">
+            <div class="flex overflow-x-auto hide-scrollbar snap-x snap-mandatory px-6 gap-4">
+                <!-- Card 1: 60% -->
+                <div class="size-card min-w-[160px] snap-center bg-white/5 border-2 border-primary rounded-xl p-4 flex flex-col items-start gap-3 relative overflow-hidden group cursor-pointer transition-all"
+                    data-size="60%" data-price="0">
+                    <div class="absolute top-2 right-2 check-icon">
+                        <span class="material-icons text-primary text-lg">check_circle</span>
+                    </div>
+                    <div class="w-10 h-10 flex items-center justify-center bg-primary/20 rounded-lg">
+                        <span class="material-icons text-primary">keyboard_hide</span>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-sm">60% Compact</h3>
+                        <p class="text-[10px] opacity-60">Portable &amp; Minimalist</p>
+                    </div>
+                    <span class="text-xs font-bold text-primary">+$0</span>
+                </div>
+                <!-- Card 2: TKL -->
+                <div class="size-card min-w-[160px] snap-center bg-white/5 border border-white/10 rounded-xl p-4 flex flex-col items-start gap-3 relative overflow-hidden group cursor-pointer transition-all"
+                    data-size="TKL" data-price="15">
+                    <div class="absolute top-2 right-2 check-icon hidden">
+                        <span class="material-icons text-primary text-lg">check_circle</span>
+                    </div>
+                    <div class="w-10 h-10 flex items-center justify-center bg-white/10 rounded-lg">
+                        <span class="material-icons opacity-60">keyboard</span>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-sm">TKL (80%)</h3>
+                        <p class="text-[10px] opacity-60">Balanced Perf.</p>
+                    </div>
+                    <span class="text-xs font-bold opacity-40">+$15</span>
+                </div>
+                <!-- Card 3: 100% -->
+                <div class="size-card min-w-[160px] snap-center bg-white/5 border border-white/10 rounded-xl p-4 flex flex-col items-start gap-3 relative overflow-hidden group cursor-pointer transition-all"
+                    data-size="100%" data-price="25">
+                    <div class="absolute top-2 right-2 check-icon hidden">
+                        <span class="material-icons text-primary text-lg">check_circle</span>
+                    </div>
+                    <div class="w-10 h-10 flex items-center justify-center bg-white/10 rounded-lg">
+                        <span class="material-icons opacity-60">apps</span>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-sm">100% Full</h3>
+                        <p class="text-[10px] opacity-60">The Complete Setup</p>
+                    </div>
+                    <span class="text-xs font-bold opacity-40">+$25</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Footer -->
+        <footer
+            class="fixed bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-background-dark via-background-dark to-transparent pt-12">
+            <div class="max-w-md mx-auto flex items-center justify-between gap-4">
+                <div class="flex gap-3 flex-grow justify-end">
+                    <a href="index.html"
+                        class="px-6 py-3 font-bold text-xs uppercase tracking-widest opacity-40 active:opacity-100 flex items-center">
+                        Cancel
+                    </a>
+                    <button id="next-step-btn"
+                        class="px-10 py-3 bg-primary text-black font-black text-xs uppercase tracking-widest rounded-xl glow-primary active:scale-95 transition-transform flex items-center gap-2">
+                        Next
+                        <span class="material-icons text-sm">arrow_forward</span>
+                    </button>
+                </div>
+            </div>
+            <div class="h-4"></div>
+        </footer>
+</body>
+
+</html>

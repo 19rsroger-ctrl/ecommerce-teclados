@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Mechanical Switch Guide</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script src="js/app.js"></script>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
+    <!-- Sticky Header -->
+    <header
+        class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 custom-blur border-b border-primary/10">
+        <div class="px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <a href="index.html" class="material-icons text-slate-400 hover:text-white lg:hidden">arrow_back</a>
+                <span class="text-xl font-bold tracking-tight uppercase hidden sm:block">Switch Guide</span>
+            </div>
+
+            <!-- Desktop Nav (Hidden on Mobile) -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="catalog.html" class="text-slate-400 hover:text-white transition-colors">Tienda</a>
+                <a href="configurator.html" class="text-slate-400 hover:text-white transition-colors">Personalizar</a>
+                <a href="guide.html" class="text-primary border-b-2 border-primary pb-0.5">Guías</a>
+                <a href="faq.html" class="text-slate-400 hover:text-white transition-colors">Soporte</a>
+            </nav>
+
+            <button class="p-2 rounded-full bg-primary/10 text-primary">
+                <span class="material-icons">tune</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="max-w-md mx-auto px-6 py-8 pb-32">
+        <!-- Hero Section -->
+        <section class="mb-10">
+            <h1 class="text-4xl font-bold mb-3 leading-tight">Encuentra tu <span class="text-primary">Click.</span></h1>
+            <p class="text-slate-500 dark:text-slate-400 leading-relaxed">
+                El switch define tu experiencia. Descubre la física detrás de cada pulsación.
+            </p>
+        </section>
+
+        <!-- Red Linear -->
+        <div class="mb-8 p-6 rounded-xl bg-white dark:bg-black/40 border border-red-500/20 shadow-2xl shadow-red-500/5">
+            <div class="flex items-center gap-4 mb-6">
+                <div
+                    class="w-16 h-16 rounded-lg bg-red-500/20 flex items-center justify-center relative overflow-hidden">
+                    <img alt="Red Switch" class="w-10 h-10 object-contain z-10"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXyG0wGJrmoxzVysbzwsy3gKH35hpz_Iwi6RZ1waL7jcLTpjBp2LRZf7AA3mO2e0SdSmN2UYy0_urVBfCs_oCjaPdbj9tXJzOQDpJOskLbWnBnHZUlaBiomgXEGYDW623B-BZQmZwAhEL_zfYxEFjrYf6jyJCrIaRjh2Acnp_vPEMgy08ZBqVnxQJM9FKSki5pSM-tMB9vza5p7gE15POymz33HAWigSE3z1TNMKJwz7EgJTQhWYVLstdgIVyMeKzs9Q4o4u_jVc8" />
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-red-500">Red Linear</h3>
+                    <p class="text-sm text-slate-400">Rápido, Suave, Silencioso</p>
+                </div>
+            </div>
+            <button
+                class="w-full py-3 rounded-lg border border-red-500/30 bg-red-500/10 text-red-500 font-bold flex items-center justify-center gap-2 hover:bg-red-500/20 transition-all">
+                <span class="material-icons text-lg">volume_up</span> ESCUCHAR
+            </button>
+        </div>
+
+        <!-- Blue Clicky -->
+        <div
+            class="mb-8 p-6 rounded-xl bg-white dark:bg-black/40 border border-blue-500/20 shadow-2xl shadow-blue-500/5">
+            <div class="flex items-center gap-4 mb-6">
+                <div
+                    class="w-16 h-16 rounded-lg bg-blue-500/20 flex items-center justify-center relative overflow-hidden">
+                    <img alt="Blue Switch" class="w-10 h-10 object-contain z-10"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDn6qS34yS8xjYDCv8kRClkgtllgof8Cg4zmbEyoWTqzPxUmLSncccvijgBiKYsQS6FJRZZu3q82GGozrahnwmT0ewn_oiXVjCOVS_qB3tSgaPHPEgRjcZVVeAKLJ4zdDyo_mVlseeEKWzRoOgpUd6BggZBOQRuXTrQ44LQ_P76eTq4XkmZsqtGFfw0vrbHuhvIK_47Jy5pTrlgbQ8pVrb9iJ7dlXT8d0fpW-i9sxhcq4R4tPXGjvs2fz--FkkF0cMElKsYD-44p64" />
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-blue-500">Blue Clicky</h3>
+                    <p class="text-sm text-slate-400">Click Audible, Táctil</p>
+                </div>
+            </div>
+            <button
+                class="w-full py-3 rounded-lg border border-blue-500/30 bg-blue-500/10 text-blue-500 font-bold flex items-center justify-center gap-2 hover:bg-blue-500/20 transition-all">
+                <span class="material-icons text-lg">volume_up</span> ESCUCHAR
+            </button>
+        </div>
+
+        <!-- CTA -->
+        <section class="mt-12 text-center p-8 rounded-2xl bg-primary/10 border border-primary/20">
+            <h2 class="text-2xl font-bold mb-4">¿Listo para elegir?</h2>
+            <a href="catalog.html"
+                class="inline-block w-full py-4 bg-primary text-black font-black rounded-lg uppercase tracking-widest shadow-lg shadow-primary/20">
+                IR A LA TIENDA
+            </a>
+        </section>
+    </main>
+
+    <!-- Unified Footer -->
+    <footer class="py-8 pb-24 text-center border-t border-primary/10 mt-auto">
+        <p class="text-xs text-slate-500">© 2024 KEY_GEN_Z. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Bottom Nav -->
+    <nav
+        class="fixed bottom-0 left-0 right-0 h-16 bg-background-light dark:bg-background-dark/90 backdrop-blur-xl border-t border-primary/10 flex items-center justify-around px-4 z-50">
+        <a href="index.html" class="nav-item flex flex-col items-center group">
+            <span class="material-icons text-slate-500 group-hover:text-primary transition-colors">home</span>
+            <span class="text-[10px] font-bold text-slate-500 group-hover:text-primary transition-colors">INICIO</span>
+        </a>
+        <a href="catalog.html" class="nav-item flex flex-col items-center group">
+            <span class="material-icons text-slate-500 group-hover:text-primary transition-colors">shopping_bag</span>
+            <span class="text-[10px] font-bold text-slate-500 group-hover:text-primary transition-colors">TIENDA</span>
+        </a>
+        <a href="guide.html" class="nav-item active flex flex-col items-center group">
+            <span class="material-icons text-slate-500 group-hover:text-primary transition-colors">school</span>
+            <span class="text-[10px] font-bold text-slate-500 group-hover:text-primary transition-colors">GUÍA</span>
+        </a>
+        <a href="faq.html" class="nav-item flex flex-col items-center group">
+            <span class="material-icons text-slate-500 group-hover:text-primary transition-colors">support_agent</span>
+            <span class="text-[10px] font-bold text-slate-500 group-hover:text-primary transition-colors">AYUDA</span>
+        </a>
+    </nav>
+</body>
+
+</html>

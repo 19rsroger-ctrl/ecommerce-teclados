@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Phantom TKL - Product Page</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script src="js/app.js"></script>
+    <script src="js/product.js" defer></script>
+</head>
+
+<body
+    class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen pb-24">
+    <!-- Sticky Header -->
+    <nav
+        class="sticky top-0 z-50 px-4 py-4 flex items-center justify-between bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10">
+        <a href="index.html" class="p-2 rounded-full hover:bg-primary/10 text-slate-100 lg:hidden">
+            <span class="material-icons">arrow_back_ios_new</span>
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+            <a href="catalog.html" class="text-primary border-b-2 border-primary pb-0.5">Tienda</a>
+            <a href="configurator.html" class="text-slate-400 hover:text-white transition-colors">Personalizar</a>
+            <a href="guide.html" class="text-slate-400 hover:text-white transition-colors">Guías</a>
+            <a href="faq.html" class="text-slate-400 hover:text-white transition-colors">Soporte</a>
+        </nav>
+
+        <div class="flex items-center gap-4">
+            <span class="text-lg font-bold tracking-tighter uppercase sm:block">Phantom <span
+                    class="text-primary">TKL</span></span>
+            <button class="p-2 rounded-full hover:bg-primary/10 relative text-slate-100">
+                <span class="material-icons text-primary">shopping_bag</span>
+                <span class="absolute top-1 right-1 w-2 h-2 bg-primary rounded-full"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Product Hero Carousel -->
+    <div class="relative w-full aspect-square bg-zinc-900 overflow-hidden">
+        <img alt="Phantom TKL Keyboard Front View" class="w-full h-full object-cover opacity-90"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8kgPwmY9OXKUoBD4dxd6h_Jo9DmUg_Gp69rek4CjIvX7heI8JUzJuY7Yok9dFRLMO8DpfnTcKpV8cOSsteH3MrBIeGfTfVDdsxUGfrtF3cjRdEVVwWX6gAzOnSk9HYrcnhFm8rfohWPm1-0DozOdIrI4fKUpN7aOYnSpNLLDn75uO1lWDTc-YlzXAtv0jJ9YjG9QH-TPWCBgllhurcQmFDL3YkKW0iSzaVaH6Ap5HMIkx8qqlAcxjKyPulqzy64Vq0iS0H1ilTY0" />
+
+        <div class="absolute bottom-6 left-0 right-0 flex justify-center gap-2">
+            <div class="w-8 h-1 bg-primary rounded-full"></div>
+            <div class="w-2 h-1 bg-white/30 rounded-full"></div>
+            <div class="w-2 h-1 bg-white/30 rounded-full"></div>
+        </div>
+
+        <div class="absolute top-4 right-4 bg-primary text-black font-bold text-xs px-3 py-1 rounded-full">
+            IN STOCK
+        </div>
+    </div>
+
+    <!-- Product Title & CTA -->
+    <div class="px-5 pt-8 pb-6 border-b border-primary/5">
+        <div class="flex justify-between items-start mb-2">
+            <div>
+                <h1 class="text-3xl font-bold tracking-tight mb-1">Phantom TKL</h1>
+                <p class="text-slate-400 text-sm">Mechanical Gaming Keyboard (80%)</p>
+            </div>
+            <div class="text-right">
+                <p class="text-3xl font-bold text-primary">$89.99</p>
+                <p class="text-xs text-slate-500 line-through">$129.99</p>
+            </div>
+        </div>
+        <div class="mt-6 flex gap-4">
+            <button id="add-to-cart-btn"
+                class="flex-1 bg-primary hover:bg-primary/90 text-black font-bold py-4 rounded-xl shadow-lg shadow-primary/20 transition-all active:scale-95">
+                ADD TO CART
+            </button>
+            <button class="px-4 py-4 border border-primary/30 rounded-xl text-primary hover:bg-primary/5">
+                <span class="material-icons">favorite_border</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Sound Test Audit Section -->
+    <section class="px-5 py-10">
+        <h2 class="text-lg font-bold mb-6 flex items-center gap-2">
+            <span class="material-icons text-primary">equalizer</span>
+            SOUND TEST AUDIT
+        </h2>
+        <div class="space-y-4">
+            <!-- Red Switch -->
+            <div class="flex items-center gap-4 bg-white/5 p-4 rounded-xl border border-primary/10">
+                <button
+                    class="sound-test-btn w-12 h-12 flex items-center justify-center border border-primary/30 rounded-full text-primary transition-colors"
+                    data-switch="Red Linear">
+                    <span class="material-icons">play_arrow</span>
+                </button>
+                <div class="flex-1">
+                    <div class="flex justify-between items-center mb-1">
+                        <span class="font-bold">Linear Red</span>
+                        <span class="text-xs text-slate-400">Quiet &amp; Smooth</span>
+                    </div>
+                    <!-- Mock Sound Wave -->
+                    <div class="flex items-end gap-0.5 h-6">
+                        <div class="w-1 h-3 bg-primary rounded-full opacity-50"></div>
+                        <div class="w-1 h-4 bg-primary rounded-full opacity-70"></div>
+                        <div class="w-1 h-2 bg-primary rounded-full opacity-40"></div>
+                        <div class="w-1 h-5 bg-primary rounded-full"></div>
+                        <div class="w-1 h-6 bg-primary rounded-full"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Brown Switch -->
+            <div class="flex items-center gap-4 bg-white/5 dark:bg-white/5 p-4 rounded-xl border border-white/5">
+                <button
+                    class="sound-test-btn w-12 h-12 flex items-center justify-center border border-primary/30 rounded-full text-primary transition-colors"
+                    data-switch="Brown Tactile">
+                    <span class="material-icons">play_arrow</span>
+                </button>
+                <div class="flex-1">
+                    <div class="flex justify-between items-center mb-1">
+                        <span class="font-bold">Tactile Brown</span>
+                        <span class="text-xs text-slate-400">Balanced Feedback</span>
+                    </div>
+                    <div class="flex items-end gap-0.5 h-6">
+                        <div class="w-1 h-2 bg-primary/40 rounded-full"></div>
+                        <div class="w-1 h-2 bg-primary/40 rounded-full"></div>
+                        <div class="w-1 h-4 bg-primary/40 rounded-full"></div>
+                        <div class="w-1 h-5 bg-primary/40 rounded-full"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Blue Switch -->
+            <div class="flex items-center gap-4 bg-white/5 dark:bg-white/5 p-4 rounded-xl border border-white/5">
+                <button
+                    class="sound-test-btn w-12 h-12 flex items-center justify-center border border-primary/30 rounded-full text-primary transition-colors"
+                    data-switch="Blue Clicky">
+                    <span class="material-icons">play_arrow</span>
+                </button>
+                <div class="flex-1">
+                    <div class="flex justify-between items-center mb-1">
+                        <span class="font-bold">Clicky Blue</span>
+                        <span class="text-xs text-slate-400">Audible Response</span>
+                    </div>
+                    <div class="flex items-end gap-0.5 h-6">
+                        <div class="w-1 h-3 bg-primary/40 rounded-full"></div>
+                        <div class="w-1 h-6 bg-primary/40 rounded-full"></div>
+                        <div class="w-1 h-3 bg-primary/40 rounded-full"></div>
+                        <div class="w-1 h-6 bg-primary/40 rounded-full"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Specs Grid -->
+    <section class="px-5 py-6">
+        <h2 class="text-lg font-bold mb-6 flex items-center gap-2 uppercase tracking-wide">
+            <span class="material-icons text-primary">settings_input_component</span>
+            Specifications
+        </h2>
+        <div class="grid grid-cols-2 gap-4">
+            <div class="p-4 bg-white/5 dark:bg-white/5 rounded-xl border border-white/10">
+                <span class="material-icons text-primary text-xl mb-2">speed</span>
+                <p class="text-xs text-slate-400 uppercase tracking-widest mb-1">Polling Rate</p>
+                <p class="font-bold">1000Hz Ultra</p>
+            </div>
+            <div class="p-4 bg-white/5 dark:bg-white/5 rounded-xl border border-white/10">
+                <span class="material-icons text-primary text-xl mb-2">keyboard</span>
+                <p class="text-xs text-slate-400 uppercase tracking-widest mb-1">Keycaps</p>
+                <p class="font-bold">PBT Double-Shot</p>
+            </div>
+            <div class="p-4 bg-white/5 dark:bg-white/5 rounded-xl border border-white/10">
+                <span class="material-icons text-primary text-xl mb-2">battery_charging_full</span>
+                <p class="text-xs text-slate-400 uppercase tracking-widest mb-1">Battery</p>
+                <p class="font-bold">4000mAh Life</p>
+            </div>
+            <div class="p-4 bg-white/5 dark:bg-white/5 rounded-xl border border-white/10">
+                <span class="material-icons text-primary text-xl mb-2">settings_input_antenna</span>
+                <p class="text-xs text-slate-400 uppercase tracking-widest mb-1">Connection</p>
+                <p class="font-bold">Triple Mode</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Unified Footer -->
+    <footer class="py-8 pb-24 text-center border-t border-primary/10 mt-auto">
+        <p class="text-xs text-slate-500">© 2024 KEY_GEN_Z. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Sticky Bottom Bar -->
+    <nav
+        class="fixed bottom-0 left-0 right-0 h-16 bg-background-light dark:bg-background-dark/90 backdrop-blur-xl border-t border-primary/10 flex items-center justify-around px-4 z-40">
+        <a href="index.html" class="nav-item flex flex-col items-center group">
+            <span class="material-icons text-slate-500 group-hover:text-primary transition-colors">home</span>
+            <span class="text-[10px] font-bold text-slate-500 group-hover:text-primary transition-colors">INICIO</span>
+        </a>
+        <a href="catalog.html" class="nav-item active flex flex-col items-center group">
+            <span class="material-icons text-slate-500 group-hover:text-primary transition-colors">shopping_bag</span>
+            <span class="text-[10px] font-bold text-slate-500 group-hover:text-primary transition-colors">TIENDA</span>
+        </a>
+        <a href="guide.html" class="nav-item flex flex-col items-center group">
+            <span class="material-icons text-slate-500 group-hover:text-primary transition-colors">school</span>
+            <span class="text-[10px] font-bold text-slate-500 group-hover:text-primary transition-colors">GUÍA</span>
+        </a>
+        <a href="faq.html" class="nav-item flex flex-col items-center group">
+            <span class="material-icons text-slate-500 group-hover:text-primary transition-colors">support_agent</span>
+            <span class="text-[10px] font-bold text-slate-500 group-hover:text-primary transition-colors">AYUDA</span>
+        </a>
+    </nav>
+</body>
+
+</html>
